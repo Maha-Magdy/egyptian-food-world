@@ -6,9 +6,14 @@
 .fa-heart {
   color: rgb(235, 104, 100);
   font-size: larger;
+  cursor: pointer;
+}
+
+.fa-heart:hover {
+  font-weight: 900;
 }
 
 #likeNumbers {
-    margin-right: .5rem;
-    font-weight: 500;
+  margin-right: 0.5rem;
+  font-weight: 500;
 }
