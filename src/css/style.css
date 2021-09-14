@@ -1,1 +1,14 @@
 /* Styles */
+.color-orange {
+  color: rgb(235, 104, 100);
+}
+
+.fa-heart {
+  color: rgb(235, 104, 100);
+  font-size: larger;
+}
+
+#likeNumbers {
+    margin-right: .5rem;
+    font-weight: 500;
+}

@@ -4,6 +4,7 @@
   "description": "",
   "main": "webpack.config.js",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
     "accepts": "^1.3.7",
     "acorn": "^8.5.0",
     "acorn-import-assertions": "^1.7.6",
