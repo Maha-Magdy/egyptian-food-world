@@ -1,7 +1,10 @@
-import Meal from "./meal.js";
+/* eslint-disable import/prefer-default-export */
+/* eslint-disable no-restricted-syntax */
+
+import Meal from './meal.js';
 
 export function updateMealsNumber(mealsList) {
-  document.getElementById("meals-num").textContent = mealsList.length;
+  document.getElementById('meals-num').textContent = mealsList.length;
 }
 
 function createMealsObject(mealsList, likesList) {
@@ -17,7 +20,7 @@ function createMealsObject(mealsList, likesList) {
       meal.strMeal,
       meal.strMealThumb,
       meal.idMeal,
-      likes
+      likes,
     );
     mealObj.drawTheMeal();
   }
@@ -25,17 +28,16 @@ function createMealsObject(mealsList, likesList) {
 
 async function egyptianMeals() {
   const egyptianFood = await fetch(
-    "https://www.themealdb.com/api/json/v1/1/filter.php?a=Egyptian"
+    'https://www.themealdb.com/api/json/v1/1/filter.php?a=Egyptian',
   );
   const egyptianMeals = await egyptianFood.json();
   const egyptianMealsList = egyptianMeals.meals;
   const egyptianMealsLikes = await fetch(
-    "https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/necgfXW8nUf9YW13OlZY/likes"
+    'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/necgfXW8nUf9YW13OlZY/likes',
   );
   const egyptianMealsLikesList = await egyptianMealsLikes.json();
   updateMealsNumber(egyptianMealsList);
   createMealsObject(egyptianMealsList, egyptianMealsLikesList);
 }
 
-window.addEventListener("load", egyptianMeals());
-
+window.addEventListener('load', egyptianMeals());
