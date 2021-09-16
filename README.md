@@ -2,7 +2,8 @@
 
 ## About
 
-This web app was built as the Capstone Project for Microverse JavaScript Curriculum Module.
+An "Egyptian food world" helps fetch the Egyptian meals list from Meal DB API and functionality to add likes for each one and share comments using Involvement API. This website was built with ES6, Webpack, fetching the data from REST API, and unit testing using Jest.
+
 It was built upon two independent APIs:
 - [Meal DB](https://www.themealdb.com/api.php): data about meals
 - [Involvement](https://www.notion.so/microverse/Involvement-API-869e60b5ad104603aa6db59e08150270): Microverse API to record the different user interactions (likes, comments).
