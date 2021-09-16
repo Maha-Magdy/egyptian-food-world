@@ -17,3 +17,20 @@
   margin-right: 0.5rem;
   font-weight: 500;
 }
+
+#commentsModal {
+  background-color: rgb(235, 104, 100);
+}
+
+.close {
+  border: none;
+  background-color: unset;
+}
+
+.x {
+  font-size: 22px;
+}
+
+.modal-header {
+  padding: 10px 1rem;
+}
