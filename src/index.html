@@ -1,52 +1,94 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title>Egyptian Food World</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-</head>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+  </head>
 
-<body>
+  <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container">
-            <a class="navbar-brand" href="#">Egyptian Food World</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
-                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <div class="container">
+        <a class="navbar-brand" href="#">Egyptian Food World</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarColor01"
+          aria-controls="navbarColor01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarColor01">
-                <ul class="navbar-nav me-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home (<span id="meals-num"></span>)
-                            <span class="visually-hidden">(current)</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#"
+                >Home (<span id="meals-num"></span>)
+                <span class="visually-hidden">(current)</span>
+              </a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <main class="py-5">
-        <div class="container">
-            <div class="row" id="meals-container">
+      <div class="container">
+        <div class="row" id="meals-container"></div>
+      </div>
+
+      <div class="modal" id="commentsModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Meal Details</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true" class="x">&times;</span>
+              </button>
             </div>
+            <div class="modal-body">
+              
+            </div>
+            <div class="modal-footer">
+              <button
+                id="closeModal"
+                type="button"
+                class="btn btn-primary"
+                data-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
 
     <footer class="bg-light">
-        <div class="container text-center">
-            <p class="my-3">Made with
-                <span class="lazyparent">
-                    <img class="lazypreload lazyloaded"
-                        src="https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/red-heart_2764-fe0f.png"
-                        alt="Red Heart" title="Red Heart" width="25" height="25">
-                </span>
-                by Maha & Mai. Copyright 2021 under MIT License.
-            </p>
-        </div>
+      <div class="container text-center">
+        <p class="my-3">
+          Made with
+          <span class="lazyparent">
+            <img
+              class="lazypreload lazyloaded"
+              src="https://emojipedia-us.s3.amazonaws.com:443/source/skype/289/red-heart_2764-fe0f.png"
+              alt="Red Heart"
+              title="Red Heart"
+              width="25"
+              height="25"
+            />
+          </span>
+          by Maha & Mai. Copyright 2021 under MIT License.
+        </p>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>

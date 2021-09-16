@@ -7,11 +7,8 @@ It was built upon two independent APIs:
 - [Meal DB](https://www.themealdb.com/api.php): data about meals
 - [Involvement](https://www.notion.so/microverse/Involvement-API-869e60b5ad104603aa6db59e08150270): Microverse API to record the different user interactions (likes, comments).
 
-Below a screenshot of the homepage is presented.
-
-<p align="center">
-    <img alt="Screenshot" src="./docs/Screenshot.png" width="700">
-</p>
+![Screenshot1](/src/screencapture-1.png)
+![Screenshot2](/src/screencapture-2.png)
 
 ## Built With
 
