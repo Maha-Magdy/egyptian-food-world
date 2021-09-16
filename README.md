@@ -16,6 +16,10 @@ It was built upon two independent APIs:
 - Jest, & Webpack;
 - VisualStudio Code, Git, & GitHub;
 
+## Live Demo
+
+[Live Demo Link]( https://maha-magdy.github.io/egyptian-food-world/ )
+
 ## Pre-requisites
 
 - NodeJs (v. 14.17)
