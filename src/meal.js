@@ -1,6 +1,5 @@
 /* eslint-disable radix */
 /* eslint-disable class-methods-use-this */
-/* eslint-disable array-callback-return */
 
 const listComments = async (itemId) => {
   const response = await fetch(
@@ -14,7 +13,7 @@ const listComments = async (itemId) => {
   title.style = 'text-align: center; padding: 20px 0';
   const ul = document.createElement('div');
   title.innerHTML = `<h5>Comments</h5><h5 id="counter">(${comments.length})</h5>`;
-  comments.map((comment) => {
+  comments.forEach((comment) => {
     ul.innerHTML += `<p style="width: 100%; display: flex; justify-content: space-between"><span><strong>${comment.username}:</strong> ${comment.comment}</span> <span>${comment.creation_date}</span</p> <br>`;
   });
 
@@ -105,7 +104,9 @@ export default class Meal {
   }
 
   hideModal() {
-    document.getElementById('commentsModal').style.display = 'none';
+    this.hideModal = document.getElementById('commentsModal');
+    const commentsModal = document.getElementById('commentsModal');
+    commentsModal.style = 'display: none;';
   }
 
   async addDetailsToTheModal(e) {
