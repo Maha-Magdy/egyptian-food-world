@@ -21,6 +21,9 @@ It was built upon two independent APIs:
 
 [Live Demo Link]( https://maha-magdy.github.io/egyptian-food-world/ )
 
+## Explanation  Video
+[Explanation Video Link](https://drive.google.com/file/d/1pHodtIYPpZzXRjeA7y0SlWZFSP1Q6pYn/view?usp=sharing)
+
 ## Pre-requisites
 
 - NodeJs (v. 14.17)

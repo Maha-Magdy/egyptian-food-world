@@ -1,9 +1,8 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable radix */
 /* eslint-disable class-methods-use-this */
 /* eslint-disable array-callback-return */
 
-async function listComments(itemId) {
+const listComments = async (itemId) => {
   const response = await fetch(
     `https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/necgfXW8nUf9YW13OlZY/comments?item_id=${itemId}`,
   );
@@ -21,9 +20,9 @@ async function listComments(itemId) {
 
   commentsList.append(title);
   commentsList.append(ul);
-}
+};
 
-async function addComment(itemId) {
+const addComment = async (itemId) => {
   const username = document.getElementById('username');
   const comment = document.getElementById('comment-text');
   await fetch(
@@ -41,7 +40,7 @@ async function addComment(itemId) {
   comment.value = '';
 
   listComments(itemId);
-}
+};
 
 export default class Meal {
   constructor(name, thumbSrc, id, likes) {
@@ -170,7 +169,7 @@ export default class Meal {
   async addLike() {
     const mealId = this.id;
     this.previousSibling.innerHTML = parseInt(this.previousSibling.innerHTML) + 1;
-    const like = await fetch(
+    await fetch(
       'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/necgfXW8nUf9YW13OlZY/likes',
       {
         method: 'POST',

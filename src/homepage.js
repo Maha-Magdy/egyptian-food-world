@@ -3,11 +3,11 @@
 
 import Meal from './meal.js';
 
-export function updateMealsNumber(mealsList) {
+export const updateMealsNumber = (mealsList) => {
   document.getElementById('meals-num').textContent = mealsList.length;
-}
+};
 
-function createMealsObject(mealsList, likesList) {
+const createMealsObject = (mealsList, likesList) => {
   for (const meal of mealsList) {
     let likes;
     const likeObj = likesList.filter((obj) => obj.item_id === meal.idMeal);
@@ -24,9 +24,9 @@ function createMealsObject(mealsList, likesList) {
     );
     mealObj.drawTheMeal();
   }
-}
+};
 
-async function egyptianMeals() {
+const egyptianMeals = async () => {
   const egyptianFood = await fetch(
     'https://www.themealdb.com/api/json/v1/1/filter.php?a=Egyptian',
   );
@@ -38,6 +38,6 @@ async function egyptianMeals() {
   const egyptianMealsLikesList = await egyptianMealsLikes.json();
   updateMealsNumber(egyptianMealsList);
   createMealsObject(egyptianMealsList, egyptianMealsLikesList);
-}
+};
 
 window.addEventListener('load', egyptianMeals());
